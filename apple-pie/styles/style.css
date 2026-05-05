@@ -50,7 +50,7 @@ li {
   font-size: 1.3em;
 }
 
-.bg-img {
+.hero-container {
   background: url(../images/apple-pie.jpg) 0 0 / cover no-repeat;
   height: 740px;
   color: white;
@@ -92,7 +92,7 @@ li {
 }
 
 
-.ingredients ul li::marker {
+.ingredients ul > li::marker {
   content: '- ';
 }
 
@@ -103,13 +103,19 @@ li {
 .directions ol {
   margin-left: 15px;
   line-height: 1.7em;
+  /* list-style: none; */
 }
 
-.directions ol li {
+.directions ol > li {
   margin-top: 5px;
   padding-left: 5px;
+  /* counter-increment: listcounter; */
 }
 
-.directions ol li::marker {
-  content: counter(list-item)')';
+/* .directions ol > li::before {
+  content: counter(listcounter) ")";
+} */
+
+.directions ol > li::marker {
+  content: counter(list-item) ")";
 }
