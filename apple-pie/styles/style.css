@@ -59,7 +59,6 @@ li {
 }
 
 .recipe-container {
-  /* background-color: red; */
   width: 60%;
   margin: 30px auto 0;
   padding: 50px 10px 0;
@@ -104,7 +103,6 @@ li {
 .directions ol {
   margin-left: 15px;
   line-height: 1.7em;
-  /* list-style: none; */
 }
 
 .directions ol li {
